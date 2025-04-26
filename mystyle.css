@@ -1,0 +1,129 @@
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+div{
+    font-size: 3vw;
+}
+
+body {
+
+    background-image:
+    linear-gradient(rgba(98, 154, 179, 0.3), rgba(69, 30, 103, 0.4));
+    
+    border-style: solid;
+    border-color: #4B0082;
+    border-width: 0.2em;
+
+    margin: auto;
+}
+
+/* Visual properties for main header */
+
+h1 {
+    margin-left: 20px;
+    text-decoration: underline overline;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Visual properties for secondary headers */
+
+h2{
+    color: rgb(69, 30, 104);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline overline;
+    font-size: 150%;
+    
+}
+
+/* Visual properties for 'Absent' header */
+
+h3{
+    color: hsla(272, 55%, 26%, 0.7);
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+p{
+    text-align: center;
+
+    font-size: 0.2in;
+    
+    border: 2px solid #20B2AA;
+    padding-left: 1px;
+    padding-right:1px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin: 20px;
+    background-color: color-mix(in hsl, hsl(125 60 90), lavender 25%);
+}
+
+
+
+ol{
+    border-style: solid;
+    border-color: color(from purple srgb r g b / 0.5);
+    border-width: 0.2em;
+    border-radius: .5em;
+}
+
+ul{
+    border-style: solid;
+    border-color: color(from purple srgb r g b / 0.5);
+    border-width: 0.2em;
+    border-radius: .5em;
+}
+
+details{
+    margin-left: 0.5cm;
+    margin-right: 0.5cm;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+}
+
+form{
+    text-align: center;
+    font-size: 0.2in;
+
+}
+
+img{
+    height: 200px;
+    max-width: 400px;
+}
+
+video{
+    min-width: 600px;
+}
+
+audio{
+    width: 300px;
+}
+
+@property --box-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: aqua;
+    fallback: pink;
+  }
+  
+  .parent {
+    --box-color: lightcyan;
+    background-color: var(--box-color);
+  }
+  
+  .child {
+    width: 80%;
+    height: 40%;
+    background-color: var(--box-color);
+  }
+  
