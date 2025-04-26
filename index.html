@@ -69,7 +69,7 @@
 
     .flex-container {
       display: flex;
-      background-color: DodgerBlue;
+      background-color: rgb(151, 125, 235);
     }
 
     .flex-container > div {
@@ -102,6 +102,20 @@
     form.ex1 {display: inline;}
     ul.ex2 {display: inline-block;}
 
+    #para1{
+      border: 2px solid #20B2AA;
+      padding-left: 1px;
+      padding-right:1px;
+      padding-top:2px;
+      padding-bottom:2px;
+      margin: 20px;
+      background-color: color-mix(in hsl, hsl(125 60 90), lavender 25%);
+    }
+
+    #para2{
+      color: rgb(12, 135, 146);
+    }
+
 
     </style>
 
@@ -111,12 +125,12 @@
   <body>
     <div class ='header'>
     <header>
-      <div>CONTENTS</div>
+      <p class ='nav'>CONTENTS</p>
       <nav>
         <ul class ='ex2'>
-          <li><a href="#attendance">Attendance</a></li>
-          <li><a href="#agenda">Agenda</a></li>
-          <li><a href="#questions">Additional Questions</a></li>
+          <li class ='nav'><a href="#attendance">Attendance</a></li>
+          <li class ='nav'><a href="#agenda">Agenda</a></li>
+          <li class ='nav'><a href="#questions">Additional Questions</a></li>
         </ul>
     </nav>
     </header>
@@ -131,6 +145,7 @@
 
     <hr>
     <section>
+    <h1>Overview</h1>
     <h2 id="attendance">Attendance</h2>
       <ol>
         <li><span style="color:darkgreen">Minecraft Steve</span></li>
@@ -151,9 +166,10 @@
 
       <hr>
 
+    
     <section>
       <h2 id="agenda">Agenda</h2>
-      <p>Together we will continue our brainstorming from last meeting on what
+      <p id='para1'>Together we will continue our brainstorming from last meeting on what
         are the worst locations featured on <i>Kitchen Nightmares</i>. We will
         be putting these locations on a list that we will then be referencing
         for our Russian Roulette-inspired game that selects a restaraunt for the
@@ -176,9 +192,13 @@
       <img src="https://lh6.googleusercontent.com/proxy/CP9cUiQdKsw1D52qWJLF09fo9BHoyPjtSqek33fJp-xUvmjRmT24C3C-oziWV_sMZENmMaZy2QPSymo" alt="GodNo">
     </div>
 
+    <p>(✌ﾟ∀ﾟ)☞ Stan Gordon Ramsey (✌ﾟ∀ﾟ)☞</p>
+
       <video class ='static' width="480" height="320" controls>
         <source src="assets/funny-gordon-ramsay-moments-that-make-me-go-haha.mp4" type="video/mp4">
       </video><br>
+
+    <p>(✌ﾟ∀ﾟ)☞ Stan Gordon Ramsey (✌ﾟ∀ﾟ)☞</p>
 
       <audio controls src="assets/Gordon-Ramsay-Idiot-Sandwich.mp3"></audio>
       <hr>
@@ -188,27 +208,26 @@
       
       <details class ='child'>
         <summary>Why is Amy's Baking Company not allowed?</summary>
-        <p>Everyone knows Amy's Baking Company. <b>It's too easy of a pick.</b></p>
+        <p id='para1'>Everyone knows Amy's Baking Company. <b>It's too easy of a pick.</b></p>
       </details>
 
       <details class ='child'>
       <summary>What counts as 'the worst'?</summary>
-      <p>Normal stuff you'd expect from <i>Kitchen Nightmares</i> - bugs,
+      <p id='para1'>Normal stuff you'd expect from <i>Kitchen Nightmares</i> - bugs,
       grime, rats, expired food, horribly crowded menus, horrible staff,
       you name it!
       </details>
 
       <details class ='child'>
       <summary>What if my idea is not good enough?</summary>
-      <p>This is just the brainstorming process!
-        We just want to look for ideas right now.
-        Do not worry and do not overthink.
+      <p id='para1'>This is just the brainstorming process!
+        We just want to look for ideas right now. Do not worry and do not overthink.
       </p>
       </details>
 
       <details class ='child'>
       <summary>What if I can't watch <i>Kitchen Nightmares</i>?</summary>
-      <p><em>Free episodes are on YouTube babyyyy.</em></p>
+      <p id='para1'><em>Free episodes are on YouTube babyyyy.</em></p>
       </details>
     </section>
 
@@ -217,7 +236,7 @@
     <h2>Submit New Questions Below</h2>
     <form>
       <fieldset>
-      <p><label>If you have any additional questions/suggestions, send below!</label></p>
+      <p id='para1'><label>If you have any additional questions/suggestions, send below!</label></p>
       <textarea rows="3" cols="50">Example lmao</textarea>
       <br>
       <button type="button" onclick="alert('Oh...no page yet :((')">Submit</button>
@@ -299,10 +318,11 @@
     </main>
 
     <footer class ='footer'>
-      (✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞
+      <p id='para2'>(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞
         (✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞
         (✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞
         (✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞(✌ﾟ∀ﾟ)☞
+      </p>
     </footer>
   </body>
 </html>
