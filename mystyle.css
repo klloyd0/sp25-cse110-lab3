@@ -1,14 +1,18 @@
+.titillium-web-extralight {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
 div{
     font-size: 3vw;
 }
 
-*{
-    background-image:
-    linear-gradient(rgba(98, 154, 179, 0.3), rgba(69, 30, 103, 0.4));
-}
-
 body {
 
+    background-image:
+    linear-gradient(rgba(98, 154, 179, 0.3), rgba(69, 30, 103, 0.4));
+    
     border-style: solid;
     border-color: #4B0082;
     border-width: 0.2em;
@@ -22,7 +26,7 @@ h1 {
     margin-left: 20px;
     text-decoration: underline overline;
     text-align: center;
-    
+    font-size: 40px;
 }
 
 /* Visual properties for secondary headers */
@@ -51,42 +55,32 @@ h3{
 
 p{
     text-align: center;
+
     font-size: 0.2in;
+    
+    border: 2px solid #20B2AA;
+    padding-left: 1px;
+    padding-right:1px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin: 20px;
+    background-color: color-mix(in hsl, hsl(125 60 90), lavender 25%);
 }
 
-h1:has(+ h2) {
-    background-color:rgb(161, 224, 225);
-    font-size: 150%;
-  }
 
-ol, ul{
+
+ol{
     border-style: solid;
     border-color: color(from purple srgb r g b / 0.5);
-    border-width: 0.2px;
+    border-width: 0.2em;
     border-radius: .5em;
-    padding: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
-ol li{
-    background-color: rgba(192, 149, 229, 0.4);
-  }
-
-ul > li{
-    background-color: rgba(192, 149, 229, 0.4);
-  }
-
-ul > li[class="nav"]{
-    background-color: rgb(119, 210, 240);
-  }
-
-div + video {
-    background-color:rgba(137, 43, 226, 0.253);
-}
-
-div ~ p {
-    color:rgb(15, 59, 93);
+ul{
+    border-style: solid;
+    border-color: color(from purple srgb r g b / 0.5);
+    border-width: 0.2em;
+    border-radius: .5em;
 }
 
 details{
@@ -118,12 +112,12 @@ audio{
 @property --box-color {
     syntax: "<color>";
     inherits: false;
-    initial-value: rgb(158, 232, 232);
+    initial-value: aqua;
     fallback: pink;
   }
   
   .parent {
-    --box-color: rgb(112, 197, 197);
+    --box-color: lightcyan;
     background-color: var(--box-color);
   }
   
