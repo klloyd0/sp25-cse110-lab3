@@ -31,5 +31,5 @@ What are some ideas for the worst restaurants featured on *Kitchen Nightmares*? 
 
 ## Resources
 
-Community Google Doc - [here](https://docs.google.com/document/d/1oCp9CtU_66EeJ4hCZ1hthZxeH9aFaMxekH9sza0LgG4/edit?usp=sharing)
-Free Kitchen Nightmares Episodes - [here](https://www.youtube.com/@KitchenNightmares-FullEpisodes/videos)
+* Community Google Doc - [here](https://docs.google.com/document/d/1oCp9CtU_66EeJ4hCZ1hthZxeH9aFaMxekH9sza0LgG4/edit?usp=sharing)
+* Free Kitchen Nightmares Episodes - [here](https://www.youtube.com/@KitchenNightmares-FullEpisodes/videos)
