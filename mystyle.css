@@ -1,10 +1,16 @@
-div{
+div {
     font-size: 3vw;
 }
 
-*{
+* {
     background-image:
     linear-gradient(rgba(98, 154, 179, 0.3), rgba(69, 30, 103, 0.4));
+}
+
+@counter-style fallback-example {
+    system: fixed;
+    symbols: "\26CF" "\2730";
+    fallback: upper-alpha;
 }
 
 body {
@@ -27,7 +33,7 @@ h1 {
 
 /* Visual properties for secondary headers */
 
-h2{
+h2 {
     color: rgb(69, 30, 104);
     margin-left: 20px;
     margin-right: 20px;
@@ -40,8 +46,8 @@ h2{
 
 /* Visual properties for 'Absent' header */
 
-h3{
-    color: hsla(272, 55%, 26%, 0.7);
+h3 {
+    color: color(from #451e67 srgb r g b / 0.5);
 
     margin-left: 20px;
     margin-right: 20px;
@@ -49,7 +55,7 @@ h3{
     margin-bottom: 2px;
 }
 
-p{
+p {
     text-align: center;
     font-size: 0.2in;
 }
@@ -59,9 +65,9 @@ h1:has(+ h2) {
     font-size: 150%;
   }
 
-ol, ul{
+ol, ul {
     border-style: solid;
-    border-color: color(from purple srgb r g b / 0.5);
+    border-color: hsla(300, 100%, 25%, 0.5);
     border-width: 0.2px;
     border-radius: .5em;
     padding: 20px;
@@ -69,17 +75,17 @@ ol, ul{
     margin-right: 20px;
 }
 
-ol li{
+ol li {
+    background-color: rgba(192, 149, 229, 0.4);
+}
+
+ul > li {
     background-color: rgba(192, 149, 229, 0.4);
   }
 
-ul > li{
-    background-color: rgba(192, 149, 229, 0.4);
-  }
-
-ul > li[class="nav"]{
+ul > li[class="nav"] {
     background-color: rgb(119, 210, 240);
-  }
+}
 
 div + video {
     background-color:rgba(137, 43, 226, 0.253);
@@ -89,47 +95,63 @@ div ~ p {
     color:rgb(15, 59, 93);
 }
 
-details{
+details {
     margin-left: 0.5cm;
     margin-right: 0.5cm;
     margin-top: 0.2cm;
     margin-bottom: 0.2cm;
 }
 
-form{
+form {
     text-align: center;
     font-size: 0.2in;
 
 }
 
-img{
+img {
     height: 200px;
     max-width: 400px;
 }
 
-video{
+video {
     min-width: 600px;
 }
 
-audio{
+audio {
     width: 300px;
+}
+
+#para1 {
+    border: 2px solid #20B2AA;
+    padding-left: 1px;
+    padding-right:1px;
+    padding-top:2px;
+    padding-bottom:2px;
+    margin: 20px;
+    background-color: color-mix(in hsl, hsl(125 60 90) 100%, hsl(240 67 94) 25%);
+}
+
+#para2 {
+    color: rgb(12, 135, 146);
 }
 
 @property --box-color {
     syntax: "<color>";
     inherits: false;
     initial-value: rgb(158, 232, 232);
-    fallback: pink;
-  }
+}
   
-  .parent {
+.parent {
     --box-color: rgb(112, 197, 197);
     background-color: var(--box-color);
-  }
+}
   
-  .child {
+.child {
     width: 80%;
     height: 40%;
     background-color: var(--box-color);
-  }
-  
+}
+
+.fallback {
+    list-style: fallback-example;
+}

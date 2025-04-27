@@ -72,17 +72,11 @@
       background-color: rgb(151, 125, 235);
     }
 
-    .flex-container > div {
-      background-color: #f1f1f1;
-      margin: 10px;
-      padding: auto;
-    }
-
     h1.sticky {
       position: sticky;
       top: 0;
       padding: 5px;
-      background-color: color-mix(in hsl, hsl(125 60 90), lavender 25%);
+      background-color: color-mix(in hsl, hsl(125 60 90), hsl(240 64 94) 25%);
       border: 2px solid #20B2AA;
     }
 
@@ -147,14 +141,14 @@
     <section>
     <h1>Overview</h1>
     <h2 id="attendance">Attendance</h2>
-      <ol>
+      <ol class = 'fallback'>
         <li><span style="color:darkgreen">Minecraft Steve</span></li>
         <li>Hulk Hogan</li>
         <li>Shaggy</li>
         <li>Scooby-Doo</li>
         <li>Gojo Satoru</li>
         <li>Vic Rattlehead</li>
-        <li>Fred Durst</li>
+        <li class = 'fallback'>Fred Durst</li>
       </ol>
     
       <h3>Absent</h3>
